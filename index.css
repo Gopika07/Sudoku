@@ -1,0 +1,84 @@
+body{
+    background-color: #FFE7E7;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    color: #944E63;
+}
+
+#game--board{ /*board*/
+    height: 470px;
+    width: 470px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#game--numbers{/*digits*/
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tile{
+    width: 48px;
+    height: 48px;
+    border: 1px solid #CAA6A6;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    margin: 0 auto;
+    color: #CAA6A6;
+    justify-items: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.number{
+    width: 41px;
+    height: 48px;
+    border: 2px solid #944E63;
+    border-radius: 5px;
+    margin: 10px 10px;
+    color: #944E63;
+    font-size: 20px;
+    font-weight: bold;
+    align-content: center;
+}
+
+.number:hover{
+    background-color: #944E63;
+    color: #FFE7E7;
+    cursor: pointer;
+}
+
+.number-selected{
+    background-color: #B47B84;
+}
+
+.tile-start{
+    background-color: #B47B84;
+    cursor: auto;
+}
+
+.horizontal-line{
+    border-bottom: 1px solid #CAA6A6;
+}
+
+.vertical-line{
+    border-right: 1px solid #CAA6A6;
+}
+
+#game--status{
+    text-align: center;
+    font-size: 25px;
+    color: #944E63
+}
